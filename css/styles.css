@@ -1,0 +1,210 @@
+/* 
+	colors Used -
+		#fff
+		#000000
+		#ddd
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bitter', serif;
+}
+
+header{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.text-center{
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+#active {
+    border-color: #7581BF !important;
+}
+
+.container-outer {
+    margin: 0 20%;
+}
+
+.caps {
+    margin-bottom: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.nav-links{
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.item-link {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    padding: 7px 7% !important;
+    border: 2px solid #ffffff;
+}
+
+.item-link a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.line {
+    height: 5px;
+    background: #ddd;
+    margin: 2% 0;
+    width:100% !important;
+}
+
+.controls {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    padding:0;
+}
+
+.margin-right {
+    margin-right: 10px;
+}
+
+.controls li button{
+    background-color: #fff;
+    border: none;
+    border-bottom: 5px solid #ddd;
+}
+
+.bg-1{
+    background: url('../img/solar-3338296_1920.png');
+    background-size: cover; 
+    height: 50px;
+    width: 50px;
+}
+
+.bg-2{
+    background: url('../img/water-4391341.svg');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.bg-3{
+    background: url('../img/windmill-2516700.svg');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.box{
+    padding-top: 2%;
+    margin-top: 2%;
+}
+
+.box ul{
+    margin: 0;
+    padding: 0;
+}
+
+.box .social li {
+    float: left;
+}
+
+.social{
+    font-size: 25px;
+}
+
+.main{
+    max-height: 100%;
+}
+
+.container h2{
+    font-weight: bold;
+}
+
+.container img{
+    /* height: 220px; */
+    width: 26%;
+    margin-right: 8%;
+    float: left;
+}
+
+.container p{
+    width: 100%;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.clear {
+    clear: both;
+}
+
+/* .fb{
+    font-size: 30px;
+} */
+@media screen and (max-width:60rem) {
+    .container-outer {
+    	margin: 0 7%;
+    }
+    .item-link {
+	padding: 4px 2% !important;
+    }
+
+}
+
+@media screen and (max-width:30rem) {
+    .container-outer {
+    	margin: 0 5%;
+    }
+    .item-link {
+        padding: 2px !important;
+        border: 0;
+    }
+
+    .item-link.margin-left {
+        border-top: 2px solid #000000 !important;
+    } 
+
+    .nav-links{
+        display: block;
+    }
+    .container img{
+    	width: 100%;
+    	margin-right: 0%;
+        float: none;
+    }
+    .caps {
+        font-size: 1.5rem;
+    }
+    * {
+	font-size: 0.75rem;
+    }
+}
